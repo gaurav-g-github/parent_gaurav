@@ -26,6 +26,12 @@
 				<configuration>
 					<copyToAppsDirectory>true</copyToAppsDirectory>
 				</configuration>
+				<inclusions>
+				 	<inclusion>
+						<groupId>org.mule.modules</groupId>
+						<artifactId>mule-module-s3</artifactId>
+					</inclusion>
+				</inclusions>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
