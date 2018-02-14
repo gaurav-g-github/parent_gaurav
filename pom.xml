@@ -17,8 +17,9 @@
 	</properties>
 
 	 <modules>
-        <module>app-file-vm</module>
-        <module>app-Hello-World</module>
+        <!-- <module>app-file-vm</module> -->
+        <!-- <module>app-Hello-World</module> -->
+		<module>app-aws-file-vm-cluster</module>
     </modules>
 
     <build>
