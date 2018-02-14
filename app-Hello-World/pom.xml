@@ -69,7 +69,14 @@
 				</configuration>
 				<executions>
 					<execution>
-						<id>deploy</id>
+						<id>undeploy-hw-chub</id>
+						<phase>undeploy</phase>
+						<goals>
+							<goal>undeploy</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>deploy-hw-chub</id>
 						<phase>deploy</phase>
 						<goals>
 							<goal>deploy</goal>
