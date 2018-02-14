@@ -177,7 +177,7 @@
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-module-s3</artifactId>
-			<version>4.1.0</version>
+			<version>3.3.2</version>
 		</dependency>
 	</dependencies>
 
