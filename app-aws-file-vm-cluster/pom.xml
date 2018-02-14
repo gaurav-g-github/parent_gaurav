@@ -25,13 +25,14 @@
 				<extensions>true</extensions>
 				<configuration>
 					<copyToAppsDirectory>true</copyToAppsDirectory>
-				</configuration>
-				<inclusions>
+					<inclusions>
 				 	<inclusion>
 						<groupId>org.mule.modules</groupId>
 						<artifactId>mule-module-s3</artifactId>
 					</inclusion>
 				</inclusions>
+				</configuration>
+				
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
