@@ -18,7 +18,7 @@
 
 	 <modules>
         <module>app-file-vm</module>
-        <module>app_Hello World</module>
+        <module>app_Hello_World</module>
     </modules>
 
     <build>
