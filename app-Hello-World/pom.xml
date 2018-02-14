@@ -69,17 +69,10 @@
 				</configuration>
 				<executions>
 					<execution>
-						<id>undeploy</id>
-						<phase>undeploy</phase>
+						<id>redeploy</id>
+						<phase>redeploy</phase>
 						<goals>
-							<goal>undeploy</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>deploy</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>deploy</goal>
+							<goal>redeploy</goal>
 						</goals>
 					</execution>
 				</executions>
