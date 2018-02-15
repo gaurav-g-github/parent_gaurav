@@ -9,11 +9,11 @@ http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/fil
 http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
 http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
 http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/current/mule-s3.xsd">
-    <s3:config name="Amazon_S3__Configuration" accessKey="AKIAJAIXTQXFRUCRO3UA" secretKey="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" doc:name="Amazon S3: Configuration"/>
+    <s3:config name="Amazon_S3__Configuration" accessKey="AKIAJF4RU5W6QHBBG4XQ" secretKey="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" doc:name="Amazon S3: Configuration"/>
     <queued-asynchronous-processing-strategy name="Queued_Asynchronous_Processing_Strategy" maxThreads="100" minThreads="10" threadTTL="5000" poolExhaustedAction="WAIT" maxBufferSize="200" doc:name="Queued Asynchronous Processing Strategy"/>
     <flow name="file-vm-clusterFlow">
         <poll doc:name="Poll">
-            <fixed-frequency-scheduler frequency="20000"/>
+            <fixed-frequency-scheduler frequency="60000"/>
             <s3:get-object-content config-ref="Amazon_S3__Configuration" bucketName="gaurav-s3" key="file_bids" doc:name="Amazon S3"/>
         </poll>
         <object-to-string-transformer doc:name="Object to String"/>
