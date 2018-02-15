@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/cu
     <queued-asynchronous-processing-strategy name="Queued_Asynchronous_Processing_Strategy" maxThreads="100" minThreads="10" threadTTL="5000" poolExhaustedAction="WAIT" maxBufferSize="200" doc:name="Queued Asynchronous Processing Strategy"/>
     <flow name="file-vm-clusterFlow">
         <poll doc:name="Poll">
-            <fixed-frequency-scheduler frequency="60000"/>
+            <fixed-frequency-scheduler frequency="20000"/>
             <s3:get-object-content config-ref="Amazon_S3__Configuration" bucketName="gaurav-s3" key="file_bids" doc:name="Amazon S3"/>
         </poll>
         <object-to-string-transformer doc:name="Object to String"/>
