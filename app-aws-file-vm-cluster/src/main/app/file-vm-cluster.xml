@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
 http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/current/mule-s3.xsd">
     <s3:config name="Amazon_S3__Configuration" accessKey="AKIAJAIXTQXFRUCRO3UA" secretKey="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" doc:name="Amazon S3: Configuration"/>
-    <queued-asynchronous-processing-strategy name="Queued_Asynchronous_Processing_Strategy" maxThreads="100" minThreads="5" threadTTL="60" poolExhaustedAction="WAIT" maxBufferSize="150" doc:name="Queued Asynchronous Processing Strategy"/>
+    <queued-asynchronous-processing-strategy name="Queued_Asynchronous_Processing_Strategy" maxThreads="100" minThreads="10" threadTTL="5000" poolExhaustedAction="WAIT" maxBufferSize="2000" doc:name="Queued Asynchronous Processing Strategy"/>
     <flow name="file-vm-clusterFlow">
         <poll doc:name="Poll">
             <fixed-frequency-scheduler frequency="60000"/>
